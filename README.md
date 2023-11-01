@@ -3,3 +3,4 @@
 ### components - que ajudam na manutenção e legibilidade
 ### props - normais e desconstruidas
 ### hook - useState
+### manipulando listas 
