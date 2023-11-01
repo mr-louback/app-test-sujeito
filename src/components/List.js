@@ -1,11 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 function List() {
-  const [task, setTask] = useState('');
-  const [list, setList] = useState(['Fazer a tarefa 1', 'Fazer a tarefa 2']);
+  const [input, setInput] = useState('');
+  const [tasks, setTasks] = useState(['Fazer a tarefa 1', 'Fazer a tarefa 2']);
+
+  useEffect(() => {
+    const listStorage = localStorage.getItem('@tasks');
+    if (listStorage) {
+      setTasks(JSON.parse(listStorage));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('@tasks', JSON.stringify(tasks));
+  }, [tasks]);
+
+
   function handleListAdd(e) {
     e.preventDefault();
-    setList([...list, task]);
-    setTask('');
+    setTasks([...tasks, input]);
+    setInput('');
   }
   return (
     <div>
@@ -14,14 +27,14 @@ function List() {
         <input
           placeholder="Digite uma tarefa"
           type="text"
-          value={task}
-          onChange={(e) => setTask(e.target.value)}
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
         />
         <button type="submit">Adicionar tarefa</button>
       </form>
       <h3>Lista de Tarefas</h3>
       <ul>
-        {list.map((item, index) => <li key={index}>{item}</li>
+        {tasks.map((item, index) => <li key={index}>{item}</li>
         )}
       </ul>
     </div>

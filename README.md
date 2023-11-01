@@ -1,6 +1,7 @@
 # Estudos de react-js
 ## Ate agora foi estudado
-### components - que ajudam na manutenção e legibilidade
-### props - normais e desconstruidas
-### hook - useState
-### manipulando listas 
+### Components - que ajudam na manutenção e legibilidade
+### Props - normais e desconstruidas
+### Hooks - useState
+### Manipulando listas 
+### Hooks - useEffect
