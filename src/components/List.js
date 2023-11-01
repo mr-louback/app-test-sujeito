@@ -34,7 +34,7 @@ function List() {
       </form>
       <h3>Lista de Tarefas</h3>
       <ul>
-        {tasks.map((item, index) => <li key={index}>{item}</li>
+        {tasks.map((item) => <li key={item}>{item}</li>
         )}
       </ul>
     </div>
