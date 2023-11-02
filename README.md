@@ -11,3 +11,4 @@
 ## Ate agora foi estudado - dia 02/11/2023
 ### Rotas - Rotas e Links
 ### Navbar - Barra de navegação
+### Navbar - Estilos

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../style.css";
+import "./style.css";
 function FetchApi() {
   const [nutrients, setNutrients] = useState([]);
   useEffect(() => {
@@ -13,7 +13,7 @@ function FetchApi() {
   }, []);
   return (
     <div className="container">
-      <header>
+      <header className="headerFetch">
         React Nutri
       </header>
       {
