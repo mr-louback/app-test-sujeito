@@ -7,7 +7,6 @@
 ### Hooks - useEffect
 ### Fetch - api
 ### Style - css
-
 ### reload
 ## Ate agora foi estudado - dia 02/11/2023
 ### Rotas - Rotas e Links
