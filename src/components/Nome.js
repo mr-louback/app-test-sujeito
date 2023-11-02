@@ -12,7 +12,7 @@ function Nome({ idade }) {
     }
     return (<div>
         <h2>Nome: {name} Idade: {count} anos</h2>
-        <button onClick={handleCount}>Count</button>
+        <button onClick={handleCount}>Clique e aumente a idade</button>
         <br />
         <br />
         <button onClick={() => handleInsertText('Ednei Louback')}>Muda Texto</button>

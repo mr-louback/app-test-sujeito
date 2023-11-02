@@ -1,12 +1,10 @@
-import { Link } from "react-router-dom";
-
+import Forms from "../../components/Forms";
+import List from "../../components/List";
 function Contact() {
   return <div>
     <h1>Contato</h1>
-    <Link to="/">Home</Link>
-    <br/>
-    <Link to="/api">Api</Link>
+    <Forms />
+    <List />
   </div>
-  
 }
 export default Contact;

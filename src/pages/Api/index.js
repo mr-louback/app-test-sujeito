@@ -1,15 +1,11 @@
-import { Link } from 'react-router-dom';
 import FetchApi from '../../components/FetchApi';
+
 function Api() {
   return (
     <div>
-      <Link to="/">Home</Link>
-      <br/>
-      <Link to="/contato">Contato</Link>
-      <br/>
+      <h1>Api</h1>
       <FetchApi />
     </div>
   )
-
 }
 export default Api;
